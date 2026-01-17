@@ -14,7 +14,7 @@ const pricingPlans = [
     popular: false,
     features: [
       "Snelle service overdag",
-      "Inclusief materiaal",
+      "Schadevrij openen",
       "Garantie op werk",
       "Geen voorrijkosten",
     ],
@@ -29,7 +29,7 @@ const pricingPlans = [
     features: [
       "24/7 beschikbaar",
       "Spoedservice",
-      "Inclusief materiaal",
+      "Schadevrij openen",
       "Garantie op werk",
     ],
   },
@@ -43,7 +43,7 @@ const pricingPlans = [
     features: [
       "Weekend service",
       "Snelle hulp",
-      "Inclusief materiaal",
+      "Schadevrij openen",
       "Garantie op werk",
     ],
   },
@@ -57,7 +57,7 @@ const pricingPlans = [
     features: [
       "24/7 spoedservice",
       "Extra snelle reactie",
-      "Inclusief materiaal",
+      "Schadevrij openen",
       "Garantie op werk",
     ],
   },

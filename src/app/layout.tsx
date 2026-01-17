@@ -21,14 +21,13 @@ export const metadata: Metadata = {
     template: "%s | JB Slotenmaker Almere",
   },
   description:
-    "Slotenmaker Almere 24/7 bereikbaar. Binnen 30 minuten ter plaatse. Deur openen vanaf €120. Slot vervangen, sleutels bijmaken. Geen voorrijkosten. Bel nu: 06 29 19 46 73",
+    "Slotenmaker Almere 24/7 bereikbaar. Binnen 30 minuten ter plaatse. Deur openen vanaf €120. Slot vervangen, beveiliging. Geen voorrijkosten. Bel nu: 06 29 19 46 73",
   keywords: [
     "slotenmaker almere",
     "noodslotenmaker almere",
     "slotenmaker 24 uur almere",
     "deur openen almere",
     "slot vervangen almere",
-    "sleutel bijmaken almere",
     "buitengesloten almere",
     "slotenmaker flevoland",
     "locksmith almere",
@@ -141,8 +140,8 @@ const jsonLd = {
             "@type": "Offer",
             itemOffered: {
               "@type": "Service",
-              name: "Sleutel bijmaken",
-              description: "Alle soorten sleutels bijmaken",
+              name: "Beveiliging",
+              description: "Advies en installatie van beveiligingssystemen",
             },
           },
         ],

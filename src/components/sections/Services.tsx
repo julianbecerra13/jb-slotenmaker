@@ -1,6 +1,6 @@
 "use client";
 
-import { DoorClosed, Key, Lock, Shield, Car, Building, ArrowRight } from "lucide-react";
+import { DoorClosed, Lock, Shield, Building, ArrowRight } from "lucide-react";
 import { FadeInUp, StaggerContainer, StaggerItem } from "@/components/ui/motion";
 
 const services = [
@@ -10,13 +10,6 @@ const services = [
     description:
       "Buitengesloten? Wij openen snel en schadevrij uw deur met professioneel gereedschap.",
     highlight: "Spoedservice",
-  },
-  {
-    icon: Key,
-    title: "Sleutel Bijmaken",
-    description:
-      "Alle soorten sleutels: huissleutels, autosleutels, kantoorsleutels en beveiligingssleutels.",
-    highlight: "Ter plekke",
   },
   {
     icon: Lock,
@@ -31,13 +24,6 @@ const services = [
     description:
       "Advies en installatie van beveiligingssystemen voor uw woning of bedrijf.",
     highlight: "Gratis advies",
-  },
-  {
-    icon: Car,
-    title: "Autosloten",
-    description:
-      "Specialist in het openen van auto's en het bijmaken van autosleutels met chip.",
-    highlight: "Alle merken",
   },
   {
     icon: Building,
