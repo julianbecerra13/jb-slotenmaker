@@ -1,0 +1,147 @@
+"use client";
+
+import { Phone, Check, Clock, Sun, Moon } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { FadeInUp, StaggerContainer, StaggerItem } from "@/components/ui/motion";
+
+const pricingPlans = [
+  {
+    title: "Dagtarief",
+    subtitle: "Door de Week",
+    price: "120",
+    schedule: "Ma-Vr 08:00 - 18:00",
+    icon: Sun,
+    popular: false,
+    features: [
+      "Snelle service overdag",
+      "Inclusief materiaal",
+      "Garantie op werk",
+      "Geen voorrijkosten",
+    ],
+  },
+  {
+    title: "Nachttarief",
+    subtitle: "Door de Week",
+    price: "150",
+    schedule: "Ma-Vr 18:00 - 08:00",
+    icon: Moon,
+    popular: true,
+    features: [
+      "24/7 beschikbaar",
+      "Spoedservice",
+      "Inclusief materiaal",
+      "Garantie op werk",
+    ],
+  },
+  {
+    title: "Weekend Dag",
+    subtitle: "Zaterdag & Zondag",
+    price: "150",
+    schedule: "Za-Zo 08:00 - 18:00",
+    icon: Sun,
+    popular: false,
+    features: [
+      "Weekend service",
+      "Snelle hulp",
+      "Inclusief materiaal",
+      "Garantie op werk",
+    ],
+  },
+  {
+    title: "Weekend Nacht",
+    subtitle: "Zaterdag & Zondag",
+    price: "200",
+    schedule: "Za-Zo 18:00 - 08:00",
+    icon: Moon,
+    popular: false,
+    features: [
+      "24/7 spoedservice",
+      "Extra snelle reactie",
+      "Inclusief materiaal",
+      "Garantie op werk",
+    ],
+  },
+];
+
+export function Pricing() {
+  return (
+    <section id="prijzen" className="py-20 bg-gray-50 overflow-hidden">
+      <div className="container mx-auto px-4">
+        <FadeInUp className="text-center max-w-2xl mx-auto mb-16">
+          <span className="text-yellow-500 font-semibold text-sm uppercase tracking-wider">Tarieven</span>
+          <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4 font-[family-name:var(--font-poppins)]">
+            Transparante Prijzen
+          </h2>
+          <p className="text-gray-600">
+            Geen verborgen kosten. Alle prijzen zijn inclusief BTW en voorrijkosten.
+          </p>
+        </FadeInUp>
+
+        <StaggerContainer className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {pricingPlans.map((plan) => (
+            <StaggerItem
+              key={plan.title + plan.subtitle}
+              className={`relative bg-white rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-2 ${
+                plan.popular
+                  ? "ring-2 ring-yellow-400 shadow-xl shadow-yellow-400/10"
+                  : "border border-gray-200 hover:border-yellow-400 hover:shadow-lg"
+              }`}
+            >
+              {plan.popular && (
+                <div className="absolute top-0 right-0 bg-yellow-400 text-black text-xs font-bold px-3 py-1 rounded-bl-lg">
+                  Populair
+                </div>
+              )}
+
+              <div className="bg-black p-6 text-center">
+                <plan.icon className="h-8 w-8 mx-auto mb-3 text-yellow-400" />
+                <h3 className="text-lg font-bold text-white">{plan.title}</h3>
+                <p className="text-gray-400 text-sm">{plan.subtitle}</p>
+              </div>
+
+              <div className="p-6">
+                <div className="text-center mb-6">
+                  <div className="flex items-baseline justify-center gap-1">
+                    <span className="text-2xl font-bold text-gray-500">€</span>
+                    <span className="text-5xl font-bold">{plan.price}</span>
+                  </div>
+                  <div className="flex items-center justify-center gap-1 mt-2 text-sm text-gray-500">
+                    <Clock className="h-4 w-4" />
+                    {plan.schedule}
+                  </div>
+                </div>
+
+                <ul className="space-y-3 mb-6">
+                  {plan.features.map((feature) => (
+                    <li key={feature} className="flex items-center gap-3 text-sm">
+                      <Check className="h-4 w-4 text-green-500 flex-shrink-0" />
+                      <span className="text-gray-700">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <Button
+                  asChild
+                  className={`w-full transition-transform hover:scale-105 ${
+                    plan.popular
+                      ? "bg-yellow-400 text-black hover:bg-yellow-300"
+                      : "bg-black text-white hover:bg-gray-800"
+                  }`}
+                >
+                  <a href="tel:+31629194673">
+                    <Phone className="mr-2 h-4 w-4" />
+                    Nu Bellen
+                  </a>
+                </Button>
+              </div>
+            </StaggerItem>
+          ))}
+        </StaggerContainer>
+
+        <FadeInUp delay={0.4} className="text-center text-sm text-gray-500 mt-8">
+          * Prijzen kunnen variëren bij complexe werkzaamheden. Vraag altijd eerst om een offerte.
+        </FadeInUp>
+      </div>
+    </section>
+  );
+}
