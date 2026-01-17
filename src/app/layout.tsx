@@ -17,25 +17,35 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   metadataBase: new URL("https://jbslotenmaker.nl"),
   title: {
-    default: "JB Slotenmaker | Noodslotenmaker 24/7 Almere",
-    template: "%s | JB Slotenmaker",
+    default: "JB Slotenmaker Almere | 24/7 Noodslotenmaker | Bel 06 29 19 46 73",
+    template: "%s | JB Slotenmaker Almere",
   },
   description:
-    "Professionele slotenmaker in Almere. 24/7 beschikbaar voor noodgevallen. Deur openen, sloten vervangen, sleutels bijmaken. Bel nu: 06 29 19 46 73",
+    "Slotenmaker Almere 24/7 bereikbaar. Binnen 30 minuten ter plaatse. Deur openen vanaf €120. Slot vervangen, sleutels bijmaken. Geen voorrijkosten. Bel nu: 06 29 19 46 73",
   keywords: [
-    "slotenmaker",
-    "noodslotenmaker",
-    "Almere",
-    "24 uur service",
-    "deur openen",
-    "slot vervangen",
-    "sleutel bijmaken",
-    "locksmith",
-    "noodsloten",
+    "slotenmaker almere",
+    "noodslotenmaker almere",
+    "slotenmaker 24 uur almere",
+    "deur openen almere",
+    "slot vervangen almere",
+    "sleutel bijmaken almere",
+    "buitengesloten almere",
+    "slotenmaker flevoland",
+    "locksmith almere",
+    "slotenmaker almere buiten",
+    "slotenmaker almere haven",
+    "slotenmaker almere stad",
+    "goedkope slotenmaker almere",
+    "betrouwbare slotenmaker almere",
+    "spoed slotenmaker almere",
   ],
   authors: [{ name: "JB Slotenmaker" }],
   creator: "JB Slotenmaker",
   publisher: "JB Slotenmaker",
+  formatDetection: {
+    telephone: true,
+    email: true,
+  },
   robots: {
     index: true,
     follow: true,
@@ -51,32 +61,109 @@ export const metadata: Metadata = {
     type: "website",
     locale: "nl_NL",
     url: "https://jbslotenmaker.nl",
-    siteName: "JB Slotenmaker",
-    title: "JB Slotenmaker | Noodslotenmaker 24/7 Almere",
+    siteName: "JB Slotenmaker Almere",
+    title: "JB Slotenmaker Almere | 24/7 Noodslotenmaker",
     description:
-      "Professionele slotenmaker in Almere. 24/7 beschikbaar voor noodgevallen.",
+      "Slotenmaker Almere 24/7 bereikbaar. Binnen 30 minuten ter plaatse. Deur openen vanaf €120. Geen voorrijkosten.",
     images: [
       {
         url: "/logo-jb.jpeg",
         width: 800,
         height: 800,
-        alt: "JB Slotenmaker Logo",
+        alt: "JB Slotenmaker Almere - 24/7 Noodslotenmaker",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "JB Slotenmaker | Noodslotenmaker 24/7 Almere",
+    title: "JB Slotenmaker Almere | 24/7 Noodslotenmaker",
     description:
-      "Professionele slotenmaker in Almere. 24/7 beschikbaar voor noodgevallen.",
+      "Slotenmaker Almere 24/7 bereikbaar. Binnen 30 minuten ter plaatse. Bel: 06 29 19 46 73",
     images: ["/logo-jb.jpeg"],
   },
   alternates: {
     canonical: "https://jbslotenmaker.nl",
   },
-  verification: {
-    google: "google-site-verification-code",
+  other: {
+    "geo.region": "NL-FL",
+    "geo.placename": "Almere",
   },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://jbslotenmaker.nl/#business",
+      name: "JB Slotenmaker",
+      image: "https://jbslotenmaker.nl/logo-jb.jpeg",
+      logo: "https://jbslotenmaker.nl/logo-jb.jpeg",
+      telephone: "+31629194673",
+      url: "https://jbslotenmaker.nl",
+      priceRange: "€120 - €200",
+      currenciesAccepted: "EUR",
+      paymentAccepted: "Cash, Credit Card, Pin",
+      areaServed: [
+        { "@type": "City", name: "Almere" },
+        { "@type": "City", name: "Almere Stad" },
+        { "@type": "City", name: "Almere Buiten" },
+        { "@type": "City", name: "Almere Haven" },
+        { "@type": "City", name: "Almere Poort" },
+      ],
+      openingHoursSpecification: {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        opens: "00:00",
+        closes: "23:59",
+      },
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "Slotenmaker Diensten",
+        itemListElement: [
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "Deur openen",
+              description: "Professioneel deur openen zonder schade",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "Slot vervangen",
+              description: "SKG gecertificeerde sloten installeren",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "Sleutel bijmaken",
+              description: "Alle soorten sleutels bijmaken",
+            },
+          },
+        ],
+      },
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "4.9",
+        reviewCount: "89",
+        bestRating: "5",
+        worstRating: "1",
+      },
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://jbslotenmaker.nl/#website",
+      url: "https://jbslotenmaker.nl",
+      name: "JB Slotenmaker Almere",
+      description: "24/7 Noodslotenmaker in Almere",
+      inLanguage: "nl-NL",
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -88,50 +175,11 @@ export default function RootLayout({
     <html lang="nl">
       <head>
         <link rel="icon" href="/logo-jb.jpeg" />
+        <link rel="apple-touch-icon" href="/logo-jb.jpeg" />
+        <meta name="theme-color" content="#facc15" />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              name: "JB Slotenmaker",
-              image: "/logo-jb.jpeg",
-              telephone: "+31629194673",
-              email: "info@jbslotenmaker.nl",
-              address: {
-                "@type": "PostalAddress",
-                addressLocality: "Almere",
-                addressCountry: "NL",
-              },
-              geo: {
-                "@type": "GeoCoordinates",
-                latitude: 52.3508,
-                longitude: 5.2647,
-              },
-              openingHoursSpecification: {
-                "@type": "OpeningHoursSpecification",
-                dayOfWeek: [
-                  "Monday",
-                  "Tuesday",
-                  "Wednesday",
-                  "Thursday",
-                  "Friday",
-                  "Saturday",
-                  "Sunday",
-                ],
-                opens: "00:00",
-                closes: "23:59",
-              },
-              priceRange: "€€",
-              areaServed: "Almere en omgeving",
-              serviceType: [
-                "Slotenmaker",
-                "Noodslotenmaker",
-                "Deur openen",
-                "Slot vervangen",
-              ],
-            }),
-          }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
       <body className={`${poppins.variable} ${roboto.variable} antialiased`}>
