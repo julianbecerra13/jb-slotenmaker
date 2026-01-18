@@ -7,11 +7,11 @@ import { FadeInUp, StaggerContainer, StaggerItem } from "@/components/ui/motion"
 const pricingPlans = [
   {
     title: "Dagtarief",
-    subtitle: "Door de Week",
-    price: "120",
-    schedule: "Ma-Vr 08:00 - 18:00",
+    subtitle: "Maandag - Vrijdag",
+    price: "100",
+    schedule: "06:00 - 18:00",
     icon: Sun,
-    popular: false,
+    popular: true,
     features: [
       "Snelle service overdag",
       "Schadevrij openen",
@@ -20,24 +20,38 @@ const pricingPlans = [
     ],
   },
   {
-    title: "Nachttarief",
-    subtitle: "Door de Week",
-    price: "150",
-    schedule: "Ma-Vr 18:00 - 08:00",
+    title: "Avondtarief",
+    subtitle: "Maandag - Vrijdag",
+    price: "120",
+    schedule: "18:00 - 00:00",
     icon: Moon,
-    popular: true,
+    popular: false,
     features: [
-      "24/7 beschikbaar",
+      "Avond beschikbaar",
       "Spoedservice",
       "Schadevrij openen",
       "Garantie op werk",
     ],
   },
   {
-    title: "Weekend Dag",
-    subtitle: "Zaterdag & Zondag",
+    title: "Nachttarief",
+    subtitle: "Maandag - Vrijdag",
     price: "150",
-    schedule: "Za-Zo 08:00 - 18:00",
+    schedule: "00:00 - 06:00",
+    icon: Moon,
+    popular: false,
+    features: [
+      "Nacht spoedservice",
+      "Altijd bereikbaar",
+      "Schadevrij openen",
+      "Garantie op werk",
+    ],
+  },
+  {
+    title: "Weekend Dag",
+    subtitle: "Za, Zo & Feestdagen",
+    price: "120",
+    schedule: "06:00 - 18:00",
     icon: Sun,
     popular: false,
     features: [
@@ -48,15 +62,29 @@ const pricingPlans = [
     ],
   },
   {
+    title: "Weekend Avond",
+    subtitle: "Za, Zo & Feestdagen",
+    price: "150",
+    schedule: "18:00 - 00:00",
+    icon: Moon,
+    popular: false,
+    features: [
+      "Weekend avondservice",
+      "Spoedservice",
+      "Schadevrij openen",
+      "Garantie op werk",
+    ],
+  },
+  {
     title: "Weekend Nacht",
-    subtitle: "Zaterdag & Zondag",
+    subtitle: "Za, Zo & Feestdagen",
     price: "200",
-    schedule: "Za-Zo 18:00 - 08:00",
+    schedule: "00:00 - 06:00",
     icon: Moon,
     popular: false,
     features: [
       "24/7 spoedservice",
-      "Extra snelle reactie",
+      "Altijd bereikbaar",
       "Schadevrij openen",
       "Garantie op werk",
     ],
@@ -77,7 +105,7 @@ export function Pricing() {
           </p>
         </FadeInUp>
 
-        <StaggerContainer className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <StaggerContainer className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {pricingPlans.map((plan) => (
             <StaggerItem
               key={plan.title + plan.subtitle}

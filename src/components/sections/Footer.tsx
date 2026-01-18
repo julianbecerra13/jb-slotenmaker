@@ -1,14 +1,14 @@
 "use client";
 
 import Image from "next/image";
-import { Phone, Clock, MapPin, DoorClosed, Lock, Shield, Building } from "lucide-react";
+import { Phone, Clock, MapPin, DoorClosed, Lock, Shield, AlertTriangle } from "lucide-react";
 import { FadeInUp, StaggerContainer, StaggerItem } from "@/components/ui/motion";
 
 const services = [
+  { icon: AlertTriangle, label: "Buitengesloten" },
   { icon: DoorClosed, label: "Deur openen" },
   { icon: Lock, label: "Slot vervangen" },
   { icon: Shield, label: "Beveiliging" },
-  { icon: Building, label: "Zakelijke diensten" },
 ];
 
 const contactInfo = [

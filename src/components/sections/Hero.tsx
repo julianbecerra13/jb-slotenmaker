@@ -41,14 +41,14 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 font-[family-name:var(--font-poppins)] leading-tight"
           >
-            Noodslotendraaier
+            Buitengesloten?
             <motion.span
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
               className="block text-yellow-400"
             >
-              24/7 Service
+              Wij helpen direct!
             </motion.span>
           </motion.h2>
 
@@ -58,8 +58,8 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed"
           >
-            Snel en professioneel slotenmakerservice aan huis. Deuren openen,
-            sloten vervangen en beveiligingsadvies van gecertificeerde experts.
+            Staat u voor een dichte deur? Geen paniek! Onze slotenmaker is binnen
+            30 minuten bij u. 24/7 spoedservice, schadevrij en met garantie.
           </motion.p>
 
           <motion.div
