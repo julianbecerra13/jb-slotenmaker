@@ -126,21 +126,28 @@ export function Footer() {
         </StaggerContainer>
 
         <FadeInUp delay={0.3} className="border-t border-gray-800 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-gray-500 text-sm">
-              {new Date().getFullYear()} JB Slotenmaker. Alle rechten voorbehouden.
-            </p>
-            <div className="flex items-center gap-6">
-              <a href="#prijzen" className="text-gray-500 hover:text-yellow-400 text-sm transition-colors">
-                Tarieven
-              </a>
-              <a href="#diensten" className="text-gray-500 hover:text-yellow-400 text-sm transition-colors">
-                Diensten
-              </a>
-              <a href="#over-ons" className="text-gray-500 hover:text-yellow-400 text-sm transition-colors">
-                Over Ons
-              </a>
+          <div className="flex flex-col gap-6">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+              <div className="flex flex-col sm:flex-row items-center gap-4 text-gray-500 text-sm">
+                <span>KVK: 84766204</span>
+                <span className="hidden sm:inline">|</span>
+                <span>BTW: NL004011886B88</span>
+              </div>
+              <div className="flex items-center gap-6">
+                <a href="#prijzen" className="text-gray-500 hover:text-yellow-400 text-sm transition-colors">
+                  Tarieven
+                </a>
+                <a href="#diensten" className="text-gray-500 hover:text-yellow-400 text-sm transition-colors">
+                  Diensten
+                </a>
+                <a href="#over-ons" className="text-gray-500 hover:text-yellow-400 text-sm transition-colors">
+                  Over Ons
+                </a>
+              </div>
             </div>
+            <p className="text-gray-600 text-xs text-center">
+              © {new Date().getFullYear()} JB Slotenmaker. Alle rechten voorbehouden.
+            </p>
           </div>
         </FadeInUp>
       </div>

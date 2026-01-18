@@ -14,7 +14,6 @@ const pricingPlans = [
     popular: true,
     features: [
       "Snelle service overdag",
-      "Schadevrij openen",
       "Garantie op werk",
       "Geen voorrijkosten",
     ],
@@ -29,7 +28,6 @@ const pricingPlans = [
     features: [
       "Avond beschikbaar",
       "Spoedservice",
-      "Schadevrij openen",
       "Garantie op werk",
     ],
   },
@@ -43,7 +41,6 @@ const pricingPlans = [
     features: [
       "Nacht spoedservice",
       "Altijd bereikbaar",
-      "Schadevrij openen",
       "Garantie op werk",
     ],
   },
@@ -57,7 +54,6 @@ const pricingPlans = [
     features: [
       "Weekend service",
       "Snelle hulp",
-      "Schadevrij openen",
       "Garantie op werk",
     ],
   },
@@ -71,7 +67,6 @@ const pricingPlans = [
     features: [
       "Weekend avondservice",
       "Spoedservice",
-      "Schadevrij openen",
       "Garantie op werk",
     ],
   },
@@ -85,7 +80,6 @@ const pricingPlans = [
     features: [
       "24/7 spoedservice",
       "Altijd bereikbaar",
-      "Schadevrij openen",
       "Garantie op werk",
     ],
   },
