@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { Phone, Menu, X } from "lucide-react";
+import { Phone, Menu, X, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navLinks = [
@@ -63,20 +63,28 @@ export function Header() {
             ))}
           </nav>
 
-          <div className="flex items-center gap-3">
-            <div className="hidden md:flex flex-col items-end">
-              <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 sm:gap-4">
+            <div className="hidden lg:flex items-center gap-3 border-r border-gray-700 pr-4">
+              <div className="flex items-center gap-1.5 bg-green-500/10 border border-green-500/30 rounded-full px-3 py-1">
+                <Clock className="h-3.5 w-3.5 text-green-400" />
+                <span className="text-xs text-green-400 font-semibold">30 min garantie</span>
+              </div>
+              <div className="flex items-center gap-1.5">
                 <span className="h-2 w-2 rounded-full bg-green-500 animate-pulse" />
-                <span className="text-xs text-green-400 font-medium">Beschikbaar</span>
+                <span className="text-xs text-green-400 font-medium">24/7</span>
               </div>
             </div>
+            <a href="tel:+31629194673" className="hidden md:flex items-center gap-2 text-white hover:text-yellow-400 transition-colors">
+              <Phone className="h-4 w-4 text-yellow-400" />
+              <span className="text-sm font-bold">06 29 19 46 73</span>
+            </a>
             <Button
               asChild
               className="bg-yellow-400 text-black hover:bg-yellow-300 font-semibold shadow-lg shadow-yellow-400/20"
             >
               <a href="tel:+31629194673" className="flex items-center gap-2">
                 <Phone className="h-4 w-4" />
-                <span className="hidden sm:inline">06 29 19 46 73</span>
+                <span className="hidden sm:inline">Bel Nu!</span>
                 <span className="sm:hidden">Bellen</span>
               </a>
             </Button>
