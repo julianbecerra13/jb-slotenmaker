@@ -94,9 +94,13 @@ export function Pricing() {
           <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4 font-[family-name:var(--font-poppins)]">
             Transparante Prijzen
           </h2>
-          <p className="text-gray-600">
-            Geen verborgen kosten. Alle prijzen zijn inclusief BTW en voorrijkosten.
+          <p className="text-gray-600 mb-4">
+            Alle prijzen zijn inclusief BTW en voorrijkosten.
           </p>
+          <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 text-sm text-gray-700">
+            <p className="font-medium text-yellow-800 mb-1">Dit zijn prijzen voor het openen van de deur.</p>
+            <p>Moet het slot vervangen worden? Neem contact op voor de exacte prijs bij extra werkzaamheden.</p>
+          </div>
         </FadeInUp>
 
         <StaggerContainer className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
