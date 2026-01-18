@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Phone, Clock, MapPin, DoorClosed, Lock, Shield, AlertTriangle } from "lucide-react";
+import { Phone, Clock, MapPin, DoorClosed, Lock, Shield, AlertTriangle, Mail, Facebook } from "lucide-react";
 import { FadeInUp, StaggerContainer, StaggerItem } from "@/components/ui/motion";
 
 const services = [
@@ -13,6 +13,8 @@ const services = [
 
 const contactInfo = [
   { icon: Phone, label: "06 29 19 46 73", href: "tel:+31629194673" },
+  { icon: Mail, label: "jbslotenmaker@gmail.com", href: "mailto:jbslotenmaker@gmail.com" },
+  { icon: Facebook, label: "jbslotenmaker", href: "https://facebook.com/jbslotenmaker" },
   { icon: Clock, label: "24/7 Beschikbaar" },
   { icon: MapPin, label: "Almere en omgeving" },
 ];
