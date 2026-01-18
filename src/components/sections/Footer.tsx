@@ -46,9 +46,9 @@ export function Footer() {
             </p>
             <a
               href="tel:+31629194673"
-              className="inline-flex items-center gap-2 bg-yellow-400 text-black font-semibold px-5 py-3 rounded-xl hover:bg-yellow-300 transition-all hover:scale-105"
+              className="btn-call-yellow inline-flex items-center gap-2 bg-yellow-400 text-black font-semibold px-5 py-3 rounded-xl hover:bg-yellow-300 transition-all"
             >
-              <Phone className="h-4 w-4" />
+              <Phone className="h-4 w-4 phone-icon-animated" />
               Nu Bellen
             </a>
           </StaggerItem>

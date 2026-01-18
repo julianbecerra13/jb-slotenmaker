@@ -100,12 +100,12 @@ export function Services() {
                 href="tel:+31629194673"
                 className={`inline-flex items-center gap-2 text-sm font-semibold transition-colors ${
                   service.featured
-                    ? "text-yellow-400 hover:text-yellow-300"
+                    ? "btn-call-yellow text-black bg-yellow-400 px-4 py-2 rounded-lg hover:bg-yellow-300"
                     : "text-black hover:text-yellow-600"
                 }`}
               >
                 {service.featured ? "Bel Nu!" : "Meer informatie"}
-                <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className={`h-4 w-4 ${service.featured ? "" : "group-hover:translate-x-1"} transition-transform`} />
               </a>
             </StaggerItem>
           ))}

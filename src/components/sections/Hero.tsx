@@ -71,10 +71,10 @@ export function Hero() {
             <Button
               asChild
               size="lg"
-              className="bg-green-600 hover:bg-green-500 text-white text-lg px-8 py-6 shadow-xl shadow-green-600/30 transition-transform hover:scale-105"
+              className="btn-call-green bg-green-600 hover:bg-green-500 text-white text-lg px-8 py-6 shadow-xl shadow-green-600/30"
             >
-              <a href="tel:+31629194673">
-                <Phone className="mr-2 h-5 w-5" />
+              <a href="tel:+31629194673" className="phone-shake">
+                <Phone className="mr-2 h-5 w-5 phone-icon-animated" />
                 Bel Direct: 06 29 19 46 73
               </a>
             </Button>

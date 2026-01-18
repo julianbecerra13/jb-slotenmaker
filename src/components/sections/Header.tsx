@@ -80,10 +80,10 @@ export function Header() {
             </a>
             <Button
               asChild
-              className="bg-yellow-400 text-black hover:bg-yellow-300 font-semibold shadow-lg shadow-yellow-400/20"
+              className="btn-call-yellow bg-yellow-400 text-black hover:bg-yellow-300 font-semibold shadow-lg shadow-yellow-400/20"
             >
               <a href="tel:+31629194673" className="flex items-center gap-2">
-                <Phone className="h-4 w-4" />
+                <Phone className="h-4 w-4 phone-icon-animated" />
                 <span className="hidden sm:inline">Bel Nu!</span>
                 <span className="sm:hidden">Bellen</span>
               </a>

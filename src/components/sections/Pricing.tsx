@@ -144,14 +144,14 @@ export function Pricing() {
 
                 <Button
                   asChild
-                  className={`w-full transition-transform hover:scale-105 ${
+                  className={`w-full ${
                     plan.popular
-                      ? "bg-yellow-400 text-black hover:bg-yellow-300"
-                      : "bg-black text-white hover:bg-gray-800"
+                      ? "btn-call-yellow bg-yellow-400 text-black hover:bg-yellow-300"
+                      : "bg-black text-white hover:bg-gray-800 hover:scale-105 transition-transform"
                   }`}
                 >
                   <a href="tel:+31629194673">
-                    <Phone className="mr-2 h-4 w-4" />
+                    <Phone className={`mr-2 h-4 w-4 ${plan.popular ? "phone-icon-animated" : ""}`} />
                     Nu Bellen
                   </a>
                 </Button>

@@ -82,10 +82,10 @@ export function CTA() {
             <Button
               asChild
               size="lg"
-              className="bg-black hover:bg-gray-900 text-yellow-400 text-xl px-10 py-7 shadow-2xl shadow-black/30 transition-transform hover:scale-105"
+              className="btn-call-ring bg-black hover:bg-gray-900 text-yellow-400 text-xl px-10 py-7 shadow-2xl shadow-black/30"
             >
               <a href="tel:+31629194673">
-                <Phone className="mr-3 h-6 w-6" />
+                <Phone className="mr-3 h-6 w-6 phone-icon-animated" />
                 06 29 19 46 73
               </a>
             </Button>
