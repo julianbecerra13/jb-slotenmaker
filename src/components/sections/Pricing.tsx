@@ -97,8 +97,11 @@ export function Pricing() {
           <p className="text-gray-600 mb-4">
             Alle prijzen zijn inclusief BTW en voorrijkosten.
           </p>
-          <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 text-sm text-gray-700">
-            <p className="font-medium text-yellow-800 mb-1">Dit zijn prijzen voor het openen van de deur.</p>
+          <div className="relative bg-yellow-50 border-2 border-yellow-400 rounded-xl p-4 text-sm text-gray-700 animate-pulse-border">
+            <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-yellow-400 text-black text-xs font-bold px-3 py-1 rounded-full">
+              Belangrijk
+            </div>
+            <p className="font-semibold text-yellow-800 mb-1 mt-1">Dit zijn prijzen voor het openen van de deur.</p>
             <p>Moet het slot vervangen worden? Neem contact op voor de exacte prijs bij extra werkzaamheden.</p>
           </div>
         </FadeInUp>
