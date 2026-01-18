@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://jbslotenmaker.nl/sitemap.xml",
+    sitemap: "https://www.jbslotenmaker.nl/sitemap.xml",
   };
 }

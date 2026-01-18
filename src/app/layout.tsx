@@ -15,7 +15,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://jbslotenmaker.nl"),
+  metadataBase: new URL("https://www.jbslotenmaker.nl"),
   title: {
     default: "JB Slotenmaker Almere | 24/7 Noodslotenmaker | Bel 06 29 19 46 73",
     template: "%s | JB Slotenmaker Almere",
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "nl_NL",
-    url: "https://jbslotenmaker.nl",
+    url: "https://www.jbslotenmaker.nl",
     siteName: "JB Slotenmaker Almere",
     title: "JB Slotenmaker Almere | 24/7 Noodslotenmaker",
     description:
@@ -81,7 +81,7 @@ export const metadata: Metadata = {
     images: ["/logo-jb.jpeg"],
   },
   alternates: {
-    canonical: "https://jbslotenmaker.nl",
+    canonical: "/",
   },
   other: {
     "geo.region": "NL-FL",
@@ -94,12 +94,12 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "LocalBusiness",
-      "@id": "https://jbslotenmaker.nl/#business",
+      "@id": "https://www.jbslotenmaker.nl/#business",
       name: "JB Slotenmaker",
-      image: "https://jbslotenmaker.nl/logo-jb.jpeg",
-      logo: "https://jbslotenmaker.nl/logo-jb.jpeg",
+      image: "https://www.jbslotenmaker.nl/logo-jb.jpeg",
+      logo: "https://www.jbslotenmaker.nl/logo-jb.jpeg",
       telephone: "+31629194673",
-      url: "https://jbslotenmaker.nl",
+      url: "https://www.jbslotenmaker.nl",
       priceRange: "€120 - €200",
       currenciesAccepted: "EUR",
       paymentAccepted: "Cash, Credit Card, Pin",
@@ -156,8 +156,8 @@ const jsonLd = {
     },
     {
       "@type": "WebSite",
-      "@id": "https://jbslotenmaker.nl/#website",
-      url: "https://jbslotenmaker.nl",
+      "@id": "https://www.jbslotenmaker.nl/#website",
+      url: "https://www.jbslotenmaker.nl",
       name: "JB Slotenmaker Almere",
       description: "24/7 Noodslotenmaker in Almere",
       inLanguage: "nl-NL",
