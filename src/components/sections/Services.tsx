@@ -16,8 +16,8 @@ const services = [
     icon: DoorClosed,
     title: "Deur Openen",
     description:
-      "Professioneel en schadevrij uw deur openen met gespecialiseerd gereedschap.",
-    highlight: "Schadevrij",
+      "Professioneel uw deur openen met gespecialiseerd gereedschap. Snel ter plaatse.",
+    highlight: "Snel & Veilig",
     featured: false,
   },
   {

@@ -59,7 +59,7 @@ export function Hero() {
             className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed"
           >
             Staat u voor een dichte deur? Geen paniek! Onze slotenmaker is binnen
-            30 minuten bij u. 24/7 spoedservice, schadevrij en met garantie.
+            30 minuten bij u. 24/7 spoedservice met garantie op ons werk.
           </motion.p>
 
           <motion.div
