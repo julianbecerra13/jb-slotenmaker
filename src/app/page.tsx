@@ -4,6 +4,7 @@ import {
   About,
   Pricing,
   Services,
+  Reviews,
   Gallery,
   CTA,
   Footer,
@@ -19,6 +20,7 @@ export default function Home() {
         <About />
         <Pricing />
         <Services />
+        <Reviews />
         <Gallery />
         <CTA />
       </main>
