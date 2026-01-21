@@ -25,16 +25,6 @@ export function Hero() {
 
       <div className="relative z-10 container mx-auto px-4 py-20">
         <div className="max-w-2xl">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2 bg-yellow-400/10 border border-yellow-400/30 rounded-full px-4 py-2 mb-6"
-          >
-            <span className="h-2 w-2 rounded-full bg-green-500 animate-pulse" />
-            <span className="text-yellow-400 text-sm font-medium">Nu Beschikbaar in Almere</span>
-          </motion.div>
-
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}

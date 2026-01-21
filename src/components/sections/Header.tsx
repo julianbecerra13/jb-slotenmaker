@@ -43,11 +43,11 @@ export function Header() {
                 priority
               />
             </div>
-            <div className="hidden sm:block">
-              <h1 className="text-xl font-bold text-white group-hover:text-yellow-400 transition-colors font-[family-name:var(--font-poppins)]">
+            <div>
+              <h1 className="text-base sm:text-xl font-bold text-white group-hover:text-yellow-400 transition-colors font-[family-name:var(--font-poppins)]">
                 JB Slotenmaker
               </h1>
-              <p className="text-xs text-gray-400">24/7 Noodslotendraaier</p>
+              <p className="text-[10px] sm:text-xs text-gray-400">24/7 Noodslotendraaier</p>
             </div>
           </a>
 
