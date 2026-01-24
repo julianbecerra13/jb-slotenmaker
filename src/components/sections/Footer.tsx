@@ -20,7 +20,7 @@ const services = [
 const contactInfo = [
   { icon: Phone, label: "06 29 19 46 73", href: "tel:+31629194673" },
   { icon: Mail, label: "jbslotenmaker@gmail.com", href: "mailto:jbslotenmaker@gmail.com" },
-  { icon: Facebook, label: "jbslotenmaker", href: "https://facebook.com/jbslotenmaker" },
+  { icon: Facebook, label: "jbslotenmaker", href: "https://www.facebook.com/profile.php?id=100093143603013" },
   { icon: TikTokIcon, label: "jbslotenmaker", href: "https://www.tiktok.com/@jbslotenmaker" },
   { icon: Clock, label: "24/7 Beschikbaar" },
   { icon: MapPin, label: "Almere en omgeving" },
