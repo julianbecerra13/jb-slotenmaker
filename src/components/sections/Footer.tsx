@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Phone, Clock, MapPin, DoorClosed, Lock, Shield, AlertTriangle, Mail, Facebook } from "lucide-react";
+import { Phone, Clock, MapPin, DoorClosed, Lock, Shield, AlertTriangle, Mail, Facebook, Instagram } from "lucide-react";
 import { FadeInUp, StaggerContainer, StaggerItem } from "@/components/ui/motion";
 
 const TikTokIcon = ({ className }: { className?: string }) => (
@@ -22,6 +22,7 @@ const contactInfo = [
   { icon: Mail, label: "jbslotenmaker@gmail.com", href: "mailto:jbslotenmaker@gmail.com" },
   { icon: Facebook, label: "jbslotenmaker", href: "https://www.facebook.com/profile.php?id=100093143603013" },
   { icon: TikTokIcon, label: "jbslotenmaker", href: "https://www.tiktok.com/@jbslotenmaker" },
+  { icon: Instagram, label: "jbslotenmaker", href: "https://www.instagram.com/jbslotenmaker" },
   { icon: Clock, label: "24/7 Beschikbaar" },
   { icon: MapPin, label: "Almere en omgeving" },
 ];
